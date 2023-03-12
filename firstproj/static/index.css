@@ -1,0 +1,34 @@
+ul{
+  list-style: none;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 20rem;
+  box-shadow: 0 2px 8px green;
+  padding: 1.5rem ;
+  border-radius: 12px ;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 33rem;
+  background-color: wheat;
+}
+li{
+  margin-right: 1rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid grey;
+}
+li:last-of-type, li:nth-last-of-type(6){
+  border-bottom: none;
+}
+li a{
+  color: rgb(132, 18, 18);
+  text-decoration: none;
+}
+
+li a:hover,
+li a:active{
+  color: chartreuse;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <center>
+  <h2>Hello {{name}}</h2>
+  <fieldset>
+    <legend><h3>calc</h3></legend>
+  <form action="add" method="POST">
+    {% csrf_token %}
+    <input type="number" name="num1">num1
+    <br><br><br>
+    <input type="number" name="num2">num2
+    <br><br><br>
+    <input type="text" name="oper">op
+    <br><br><br>
+    <input type="submit" name="sub">
+  </form>
+  </fieldset></center>
+
+
+</body>
+</html>

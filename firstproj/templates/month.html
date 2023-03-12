@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Monthly Message
+{% endblock %}
+
+
+{% block content %}
+
+  <h1> {{m|title}}'s Message </h1>
+  {% if message != None %}
+  <h1>{{message}}</h1>
+  {% else %}
+  <h1> NO message for month {{m}}</h1>
+  {% endif %}
+
+{% endblock %}
+
+
+
+"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Monthly Message</title>
+</head>
+<body>
+<h1> {{m|title}}'s Message </h1>
+{% if message != None %}
+<h1>{{message}}</h1>
+{% else %}
+<h1> NO message for month {{m}}</h1>
+{% endif %}
+</body>
+</html>"""
